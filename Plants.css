@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr 110px;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border: 1px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: white;
+}
+
+.first-card {
+    grid-row-start: 2;
+    grid-row-end: span 3 ;
+}
+
+.second-card {
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
+
+.third-card {
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+
+.fourth-card {
+    grid-row-start: 4;
+    grid-row-end: span 1;
+}
+
+.fifth-card {
+    grid-row-start: 3;
+    grid-row-end: span 2;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    border: 1px solid black;
+}
+
+.first-card, .second-card, .third-card, .fourth-card, .fifth-card {
+    margin: 5px;
+}
+
+.plant-img  {
+    height: 100%;
+    width: 100%;
+}
+
+.logo-img {
+    height: 80px;
+    width: 100px;
+}
+
+.menu-item {
+    cursor: pointer;
+}
+
+.search-input {
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;  
+    margin-right: 30px;
+    padding: 3px;
+}
+
+.contact-list {
+    margin: 20px;
+}
